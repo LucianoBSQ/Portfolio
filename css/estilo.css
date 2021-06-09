@@ -7216,10 +7216,8 @@ body {
     width: 10%; } }
 
 .carousel-item__descripcion {
-  font-size: 1.2rem; }
-
-.principal__imagen--animada {
-  animation: rotation 10s infinite linear; }
+  font-size: 1.2rem;
+  text-align: center; }
 
 .principal {
   background-color: #f8d2d6;
@@ -7235,62 +7233,31 @@ body {
   font-size: 1.5rem;
   text-align: center; }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(359deg); } }
-
-.bordeado, .tarjeta {
-  border: solid 1px black;
-  border-radius: 5%; }
-
-.tarjeta {
-  background-color: #e4bcc0;
-  padding: 1rem; }
-
 .tarjeta__titulo {
   color: red; }
-
-.tarjeta__titulo--destacada {
-  font-size: 2rem; }
 
 .tarjeta__texto {
   font-size: 1.2rem; }
 
-.tarjeta__texto--izq {
-  text-align: left; }
-
-.tarjeta__texto--der {
-  text-align: right; }
-
-.tarjeta__secundaria {
-  background-color: #ccb7b9;
-  padding: 1rem;
-  border: solid 5px #00ff1f; }
-
-.tarjeta__secundaria__titulo {
-  color: #663a3a; }
-
 .tarjeta__secundaria__texto {
   font-size: 1.1rem; }
 
-a img {
-  width: 15%;
+.icono {
+  width: 10%;
   border-radius: 50%;
   margin-left: 10px; }
+
+a img {
+  width: 25%;
+  margin: 5px; }
+
+.sinCambios {
+  width: 80%;
+  border-radius: 10%;
+  margin-left: 0px; }
 
 .nav-item {
   justify-content: flex-end; }
 
-.uno {
-  background-color: #ff0022; }
-
-.dos {
-  background-color: #00ff00; }
-
-.tres {
-  background-color: #0000FF; }
-
-.cuatro {
-  background-color: #909090; }
+.centrado {
+  text-align: center; }

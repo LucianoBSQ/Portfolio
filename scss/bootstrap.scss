@@ -45,6 +45,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
+
 body{
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
@@ -89,12 +90,7 @@ body{
 
 .carousel-item__descripcion{
     font-size: 1.2rem;
-}
-
-
-
-.principal__imagen--animada{
-    animation: rotation 10s infinite linear;
+    text-align: center;
 }
 
 .principal{
@@ -112,70 +108,41 @@ body{
     font-size: 1.5rem;
     text-align: center;
 }
-
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
-
-.bordeado{
-  border: solid 1px black;
-  border-radius: 5%;
-}
-
-.tarjeta{
-  @extend .bordeado;
-   background-color: #e4bcc0;
-   padding: 1rem;
-}
-
 .tarjeta__titulo{
    color: red;
 }
 
-.tarjeta__titulo--destacada{
-    font-size: 2rem;
-    
-}
 
 .tarjeta__texto{
     font-size: 1.2rem;
     
 }
 
-.tarjeta__texto--izq{
-    text-align: left;
-}
 
-.tarjeta__texto--der{
-    text-align: right;
-}
-
-.tarjeta__secundaria{
-    background-color: rgb(204, 183, 185);
-    padding: 1rem;
-    @include borde(#00ff1f,5px);
- }
- 
- .tarjeta__secundaria__titulo{
-    color: rgb(102, 58, 58);
- }
- 
-  
  .tarjeta__secundaria__texto{
      font-size: 1.1rem;
      
  }
  
-a img{
-  width: 15%;
+.icono {
+  width: 10%;
   border-radius: 50%;
   margin-left: 10px;
   
+}
+
+a img{
+  
+    width: 25%;
+    margin: 5px;
+  
+}
+
+.sinCambios{
+  width: 80%;
+  border-radius: 10%;
+  margin-left: 0px;
+
 }
 
 .nav-item{
@@ -183,10 +150,8 @@ a img{
    justify-content: flex-end;
    
 }
-$colores: (uno:#ff0022 , dos:#00ff00, tres:#0000FF, cuatro:#909090);
-@each $color, $colo in $colores{
-  .#{$color}{
-    background-color: $colo;
-  }
-} 
 
+.centrado{
+  text-align: center;
+  
+}
